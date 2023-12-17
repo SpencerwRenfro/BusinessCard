@@ -2,15 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@media only screen and (min-width: 1024px){
-.backgroundImage {
-  background-image: linear-gradient(#FFF0DD, #FDE1DF);
-  /* height: 100vh; */
-}
-}
+
+
 .cardBackground {
   background-image: url('../src/images/background-desktop.png');
-  /* height: 100px; */
 }
 
 
@@ -19,23 +14,17 @@
   left: 0px;
   top: 470px;
   right: 255px;
-  z-index: 50;
+  z-index: 1;
 
 }
 
-
-
-.position-relative {
-	position: relative !important;
-  }
-
-.position-absolute {
-	position: absolute !important;
-  }
-
-.image-container {
-  bottom: -20px;
+.arrowButton {
+  position: relative;
+  z-index: 1;
+  /* top: 30px;
+  left: 50px; */
 }
+
 
 .logo-container {
   right: -10px;
@@ -46,33 +35,20 @@
   background-color: #FBEAD8;
 }
 
-@media only screen and (max-width: 500px) {
-  .image-container {
-    right: -50px;
-    bottom: -20px
+
+
+@media only screen and (min-width: 1000px) {
+  .backgroundImage {
+    background-image: linear-gradient(#FFF0DD, #FDE1DF);
   }
 }
 
 @media only screen and (max-width: 600px) {
   .cardBackground {
     background-image: url('../src/images/background-mobile.png');
-    /* height: 100vh; */
   }
-  .image-container {
-    left: -700px;
-  }
-}
 
-@media only screen and (min-width: 500px) {
-  .image-container {
-    right: -20px;
-  }
-}
 
-@media only screen and (min-width: 1300px) {
-  .image-container {
-    right: -20px;
-  }
 }
 
 /* floral logo media queries */
@@ -104,4 +80,12 @@
     left: 60px;
     top: 50px;
   }
+}
+
+@media screen and (min-width: 1900px){
+  .logo-container {
+    right: 0px;
+    left: 80px;
+  }
+
 }

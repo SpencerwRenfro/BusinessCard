@@ -18,57 +18,67 @@ import "../App.css";
 function CardFront() {
   return (
     <div
-      className="container  mx-auto px-10 lg:px-20 pb-10 cardBackground rounded-lg"
-
+      className="xl:container mx-auto pb-10 lg:px-20  cardBackground rounded-lg"
+      style={{position: 'absolute', top: '50%', transform: 'translate(-50%, -50%)', left: '50%'}}
     >
 
-      <div className="grid grid-cols-12">
+      {/* <div className="grid grid-cols-12">
         <div className="col-span-3 col-start-1  lg:col-span-1 lg:col-start-5 lg:justify-center relative">
           <img
-            // src="https://gravatar.com/avatar/645ad8dc88b181886f74644b9866f080"
-            src={profile}
+            src="https://gravatar.com/avatar/645ad8dc88b181886f74644b9866f080"
+            // src={profile}
             style={{ borderRadius: "50%", border: "solid 3px white",width: '100px', height: '100px' }}
-            alt="headshot of spencer renfro"
+            alt="headshot"
           />
           <img className="w-12 logo-container position-absolute" src={logo} alt='floral logo'/>
         </div>
-        <div className="col-span-6 col-start-6 lg:col-start-7 lg:col-span-2 pt-5 ">
-        <h1 className="text-xl lg:text-3xl font-bold text-salmon">Jane Smith</h1>
-            <h2 className="text-lg lg:text-3xl  text-salmon">
-              Floral Designer
-            </h2>
+        <div className="col-span-6 col-start-6 lg:col-start-7 lg:col-span-2 pt-5">
+          <h1 className="text-xl lg:text-3xl font-bold text-salmon">Jane Smith</h1>
+          <h2 className="text-lg lg:text-3xl  text-salmon">Floral Designer</h2>
+        </div>
+      </div> */}
+
+      <div className="flex justify-evenly">
+        <div className="">
+          <img
+            src={profile}
+            style={{ borderRadius: "50%", border: "solid 3px white",width: '100px', height: '100px' }}
+            alt="headshot"
+          />
+          <img className="w-12 logo-container position-absolute" src={logo} alt='floral logo'/>
+        </div>
+        <div className="col-span-6 col-start-6 lg:col-start-7 lg:col-span-2 pt-5">
+          <h1 className="text-xl lg:text-3xl font-bold text-salmon">Jane Smith</h1>
+          <h2 className="text-lg lg:text-3xl  text-salmon">Floral Designer</h2>
         </div>
       </div>
-
-      <div className="grid grid-cols-12 pb-10 mt-10 lg:my-10 bg-white relative shadow-xl rounded"
+      <div className="grid grid-cols-12 pb-10 mt-10  bg-white relative shadow-xl rounded"
         >
-        <div className="lg:m-6 col-span-12 lg:col-start-1 lg:col-span-2 text-salmon">
-          <div className="flex gap-4 lg:my-5 hover w-72 p-3">
+        <div className="ml-5 p-2 lg:m-6 col-span-12 lg:col-start-1 lg:col-span-4 text-salmon">
+          <div className="flex gap-4 lg:my-5 hover w-11/12 lg:w-10/12 p-3">
             <img className="w-10" src={instagram} alt="social"/>
             <p className="lg:text-2xl">Instagram/janesmith</p>
           </div>
-          <div className="flex gap-4 lg:my-5 hover w-72 p-3">
+          <div className="flex gap-4 lg:my-5 hover w-11/12 lg:w-10/12  p-3">
             <img className="w-10" src={facebook} alt="social" />
             <p className="lg:text-2xl">Facebook/janesmith</p>
           </div>
-          <div className="flex gap-4 lg:my-5  hover w-72 p-3">
+          <div className="flex gap-4 lg:my-5 hover w-11/12 lg:w-10/12 p-3">
             <img className="w-10" src={pinterest} alt="social" />
             <p className="lg:text-2xl">Pinterest/janesmith</p>
           </div>
-          <div className="flex gap-4 lg:my-5 hover w-72 p-3">
+          <div className="flex gap-4 lg:my-5 hover w-11/12 lg:w-10/12 p-3">
             <img className="w-10" src={deviant} alt="social" />
             <p className="lg:text-2xl">Pinterest/janesmith</p>
           </div>
-          <div className="flex gap-4 lg:my-5 hover w-72 p-3">
+          <div className="flex gap-4 lg:my-5 hover w-11/12 lg:w-10/12 p-3">
             <img className="w-10" src={behance} alt="social" />
             <p className="lg:text-2xl">Pinterest/janesmith</p>
           </div>
         </div>
 
-        <div
-          className="w-full mx-2 lg:my-5 col-span-11 lg:col-start-7 lg:col-span-5 rounded-lg mt-10"
-          style={{ border: "solid 1px gray", height: '200px' }}
-        >
+        <div className="col-span-11 xl:col-start-7 x:col-span-6 rounded-lg mt-10 mx-2 lg:my-5 border-2"
+          style={{ border: "solid 1px gray", height: '200px' }} >
           <div className="flex gap-4 lg:gap-8">
             <img src={qrCode} alt="qr code" className="mt-10 ml-2 w-20 h-20 lg:w-40 lg:h-40 lg:m-3" />
             <div className="pt-8">
@@ -79,8 +89,8 @@ function CardFront() {
               </p>
             </div>
           </div>
-
         </div>
+
             <button className="image-container position-absolute ">
             <Link to="/">
             <div className="grid grid-cols-12  h-10 rounded-lg ">
