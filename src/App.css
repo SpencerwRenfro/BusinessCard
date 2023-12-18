@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+.body {
+  padding: 20px;
+  background-color: white;
+}
 
 .cardBackground {
   background-image: url('../src/images/background-desktop.png');

@@ -5,8 +5,8 @@ import CardBack from "./components/CardBack";
 import "./App.css";
 function App() {
   return (
-    <div className="backgroundImage" style={{height: '100vh'}}>
-      <div className="">
+    <div className="backgroundImage">
+      <div>
         <Routes>
           <Route path="/" element={<CardFront />} />
           <Route path="/Back" element={<CardBack />} />
