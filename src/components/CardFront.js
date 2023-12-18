@@ -48,42 +48,37 @@ function CardBack() {
 
       <div className="bg-white shadow-xl rounded-lg relative mx-auto p-5">
         <div className="grid grid-cols-12 gap-8 ">
-          <div className="grid grid-cols-12 col-span-12 lg:col-span-4 hover cursor-pointer p-5 lg:p-10 gap-4">
-            <div className="col-span-3 lg:col-span-12 ">
-              <img src={floralOne} alt="flower" className=" h-44 w-48" />
+            <div className="col-span-12 md:col-span-4 flex flex-row md:flex-col items-center gap-4">
+              <img src={floralOne} alt="flower" className="w-48" />
+              <div className="flex flex-col">
+                <h1 className="text-xl font-bold text-salmonLight w-full ">
+                  Floral Design 1pointer
+                </h1>
+                <p>{latin}</p>
+              </div>
             </div>
-            <div className="col-span-6 lg:col-span-12 grid grid-cols-12">
-              <h1 className="text-xl font-bold text-salmonLight col-span-12">
-                Floral Design 1pointer
-              </h1>
-              <p className="col-span-12">{latin}</p>
+
+            <div className="col-span-12 md:col-span-4 flex flex-row md:flex-col items-center gap-4">
+              <img src={floralOne} alt="flower" className="w-48" />
+              <div className="flex flex-col">
+                <h1 className="text-xl font-bold text-salmonLight">
+                  Floral Design 2
+                </h1>
+                <p>{latin}</p>
+              </div>
             </div>
-          </div>
-          <div className="grid grid-cols-12 col-span-12 lg:col-span-4 hover cursor-pointer p-5 lg:p-10 gap-4">
-            <div className="col-span-3 lg:col-span-12 ">
-              <img src={floralOne} alt="flower" className=" h-44 w-48" />
+            <div className="col-span-12 md:col-span-4 flex flex-row md:flex-col items-center">
+              <img src={floralOne} alt="flower" className="w-48" />
+              <div className="flex flex-col">
+                <h1 className="text-xl font-bold text-salmonLight">
+                  Floral Design 3
+                </h1>
+                <p>{latin}</p>
+              </div>
             </div>
-            <div className="col-span-6 lg:col-span-12 grid grid-cols-12">
-              <h1 className="text-xl font-bold text-salmonLight col-span-12">
-                Floral Design 2
-              </h1>
-              <p className="col-span-12">{latin}</p>
-            </div>
-          </div>
-          <div className="grid grid-cols-12 col-span-12 lg:col-span-4 hover cursor-pointer p-5 lg:p-10 ">
-            <div className="col-span-3 lg:col-span-12 ">
-              <img src={floralOne} alt="flower" className=" h-44 w-48" />
-            </div>
-            <div className="col-span-6 lg:col-span-12 grid grid-cols-12">
-              <h1 className="text-xl font-bold text-salmonLight col-span-12">
-                Floral Design 3
-              </h1>
-              <p className="col-span-12">{latin}</p>
-            </div>
-          </div>
         </div>
         <button className="image-container position-absolute ">
-          <Link to="/Back">
+          {/* <Link to="/Back">
             <div className="grid grid-cols-12  h-10 rounded-lg ">
               <div
                 style={{ backgroundColor: "#CA6D81" }}
@@ -96,7 +91,7 @@ function CardBack() {
                 />
               </div>
             </div>
-          </Link>
+          </Link> */}
         </button>
       </div>
     </div>
