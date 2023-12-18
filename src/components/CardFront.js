@@ -67,7 +67,7 @@ function CardBack() {
                 <p>{latin}</p>
               </div>
             </div>
-            <div className="col-span-12 md:col-span-4 flex flex-row md:flex-col items-center">
+            <div className="col-span-12 md:col-span-4 flex flex-row md:flex-col items-center gap-4">
               <img src={floralOne} alt="flower" className="w-48" />
               <div className="flex flex-col">
                 <h1 className="text-xl font-bold text-salmonLight">
