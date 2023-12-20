@@ -3,16 +3,53 @@
 @tailwind utilities;
 
 
-.body {
-  background-color: white;
+.hide {
+  display: none;
+}
+@media only screen and (max-width: 1024px){
+  .hide {
+    display: block;
+  }
 }
 
-.cardBackground {
-  background-image: url('../src/images/background-desktop.png');
+
+.backgroundImage {
+  width: 100%;
+  height: 100vh;
+}
+
+@media only screen and (min-width: 1024px) {
+  .backgroundImage {
+    background-image: linear-gradient(#FFF0DD, #FDE1DF);
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .cardBackground {
+    background-image: url('../src/images/background-mobile.png');
+    height: 100%;
+  }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .cardBackground {
+    background-image: url('../src/images/background-desktop.png');
+  }
 }
 
 
-.flipButton {
+.mobile-background {
+  background-image: url('../src/images/background-mobile.png');
+}
+
+
+.hover:hover{
+  background-color: #FBEAD8;
+}
+
+/* .flipButton {
   position: relative;
   left: 0px;
   top: 470px;
@@ -24,38 +61,20 @@
 .arrowButton {
   position: relative;
   z-index: 1;
-  /* top: 30px;
-  left: 50px; */
+  top: 30px;
+  left: 50px;
 }
 
 
 .logo-container {
   right: -10px;
   bottom: -10px;
-}
-
-.hover:hover{
-  background-color: #FBEAD8;
-}
+} */
 
 
-
-@media only screen and (min-width: 1000px) {
-  .backgroundImage {
-    background-image: linear-gradient(#FFF0DD, #FDE1DF);
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .cardBackground {
-    background-image: url('../src/images/background-mobile.png');
-  }
-
-
-}
 
 /* floral logo media queries */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .logo-container {
     right: -20px;
     top: 70px;
@@ -91,4 +110,4 @@
     left: 80px;
   }
 
-}
+} */

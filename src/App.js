@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <div className="backgroundImage lg:p-10">
-      <div>
+      <div className="">
         <Routes>
           <Route path="/" element={<CardFront />} />
           <Route path="/Back" element={<CardBack />} />
