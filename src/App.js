@@ -5,7 +5,7 @@ import CardBack from "./components/CardBack";
 import "./App.css";
 function App() {
   return (
-    <div className="backgroundImage lg:p-10">
+    <div className="backgroundImage lg:p-10 container">
       <div className="">
         <Routes>
           <Route path="/" element={<CardFront />} />
