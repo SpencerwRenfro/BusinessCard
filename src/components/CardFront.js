@@ -21,9 +21,9 @@ function CardFront() {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor fermentum ante. Suspendisse ....";
 
   return (
-    <div className="mx-auto cardBackground lg:rounded-lg lg:border-2 lg:border-white md:pb-10">
+    <div className="mx-auto cardBackground lg:rounded-lg lg:border-2 lg:border-white md:pb-10  border-2 ">
       <div className="grid grid-cols-12 gap-3 md:gap-6 py-10 items-center ">
-        <div className="col-span-12 md:col-start-2 md:col-span-3 lg:col-span-2 lg:col-start-2 flex items-center">
+        <div className="col-span-12 md:col-start-2 md:col-span-3 lg:col-span-2 lg:col-start-2 flex items-center ">
           <img
             //   src="https://gravatar.com/avatar/645ad8dc88b181886f74644b9866f080"
             src={profile}
@@ -75,7 +75,8 @@ function CardFront() {
         </div>
       </div>
 
-      <div className="bg-white shadow-xl rounded-lg relative mx-auto p-5 md:w-3/4  lg:w-11/12 max-h-1/3">
+      <div className="bg-white shadow-xl rounded-lg relative mx-auto p-5 md:w-3/4  lg:w-11/12">
+      {/* removed  max-h-1/3 at end line 78 */}
         <div className="grid grid-cols-12 gap-8 ">
           <div className="col-span-12 lg:col-span-4 flex flex-row lg:flex-col items-center gap-4 hover p-5">
             <img src={floralOne} alt="flower" className="w-48" />

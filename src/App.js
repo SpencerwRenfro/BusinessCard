@@ -5,45 +5,15 @@ import CardBack from "./components/CardBack";
 import "./App.css";
 function App() {
   return (
-    <div className="backgroundImage lg:p-10 container">
+    <div className="">
+    <div className="lg:p-16  container mx-auto">
       <div className="">
         <Routes>
           <Route path="/" element={<CardFront />} />
           <Route path="/Back" element={<CardBack />} />
         </Routes>
       </div>
-      {/* <div class="bg-slate-100 flex justify-center">
-        <div className="hover card w-96 col-start-1 bg-slate-800 inline-block">
-            <figure className="px-10 pt-10 ">
-            </figure>
-            <div className="card-body items-center text-center">
-              <h1 className="text-xl font-bold text-salmonLight">
-                Floral Design 1
-              </h1>
-              <p>{}</p>
-            </div>
-        </div>
-        <div className="hover card w-96 col-start-1 bg-slate-800 inline-block">
-            <figure className="px-10 pt-10 ">
-            </figure>
-            <div className="card-body items-center text-center">
-              <h1 className="text-xl font-bold text-salmonLight">
-                Floral Design 1
-              </h1>
-              <p>{}</p>
-            </div>
-        </div>
-        <div className="hover card w-96 col-start-1 bg-slate-800 inline-block">
-            <figure className="px-10 pt-10 ">
-            </figure>
-            <div className="card-body items-center text-center">
-              <h1 className="text-xl font-bold text-salmonLight">
-                Floral Design 1
-              </h1>
-              <p>{}</p>
-            </div>
-        </div>
-      </div> */}
+    </div>
     </div>
   );
 }

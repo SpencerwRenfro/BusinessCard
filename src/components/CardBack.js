@@ -31,7 +31,7 @@ function CardBack() {
 
         </div>
         <div className="col-span-12 md:col-start-6 md:col-span-5 lg:col-span-6 lg:col-start-6 flex flex-col lg:flex-row gap-6 md:gap-3 lg:gap-0">
-          <div class="flex flex-col text-center md:text-left">
+          <div className="flex flex-col text-center md:text-left">
             <h1 className="text-4xl md:text-2xl lg:text-3xl font-bold text-salmon">
               Jane Smith
             </h1>
@@ -67,7 +67,7 @@ function CardBack() {
             </div>
           </div>
 
-          <div className="grid grid-rows-4 grid-flow-col border-2 border-gray h-1/2 gap-8 border-2 border-gray-300 px-1">
+          <div className="grid grid-rows-4 grid-flow-col border-2 border-gray h-1/2 gap-8 border-gray-300 px-1">
             <div className="row-span-3">
               <img
                 src={qrCode}

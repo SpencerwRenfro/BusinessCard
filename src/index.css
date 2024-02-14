@@ -5,6 +5,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url("../src/images/background-desktop.png");
+    /* Add other desktop-specific styles if needed */
+  }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url("../src/images/background-mobile.png");
+    /* Add other mobile-specific styles if needed */
+  }
 }
 
 code {
